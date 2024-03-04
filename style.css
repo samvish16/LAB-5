@@ -1,0 +1,60 @@
+<style>
+  /* Set font family to 'Sacramento' */
+  body {
+    font-family: 'Sacramento', cursive;
+  }
+  
+  /* Set font sizes */
+  h1, h2 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Set border */
+  body {
+    border: 2px solid black;
+    padding: 10px;
+  }
+
+  /* Set color to gradient blue */
+  body {
+    background: linear-gradient(to bottom, #33ccff 0%, #0066ff 100%);
+    color: white;
+  }
+  
+  /* Additional CSS styling if necessary */
+  
+  /* Create simple corner designs */
+  #simpleCornerDesign {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  #simpleCornerDesign::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 0 0 0 20px;
+  }
+
+  #simpleCornerDesign::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0 0 20px 0;
+  }
+</style>
